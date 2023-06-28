@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>LE Desarrollo Web</title>
+</head>
+<body>
+    <!--SECCIÓN INICIO-->
+    <section id="Inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/LE/</h1>
+                    <nav id="nav" class="">
+                        <ul>
+                            <li><a href="#Inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this) ">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this) ">SERVICIOS</a>
+                            </li>
+                            <li><a href="#portafolio" onclick="seleccionar(this) ">PORTAFOLIO<a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this) ">CONTACTO<a></li>
+                        </ul>
+                    </nav>
+                    <!--ICONOS DEL MENÚ RESPONSIVE-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i> 
+                    </div>
+                    <!--ICONOS REDES SOCIALES-->
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Liliana Escobar</span>, Desarrolladora Web</h2>
+                <p class="descripcion">Una apasionada por el diseño y la programación</p>
+                <a href="#portafolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img\foto2.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, soy <span>Liliana Escobar</span></h2>
+            <p>Puedo decirte que siempre me gusto todo lo relacionado con el mundo digital. Hace meses comence a estudiar de manera autodidacta y actualmente me encuentro cursando programación en Alura.
+                <br> Busco aprender constantemente sobre esta profesión. Me encanta desafiarme con nuevos retos que me permitan crecer como desarrolladora. </p>
+            <a href="#">Deacargar CV</a>
+        </div>
+    </section>
+    <!--SECCION SERVICIOS-->
+    <seccion id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+        
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                <li>Consultoría de diseño web</li>
+                <li>Logotipos y gráficos</li>
+            </ul>
+            <p>Puedo asesorarte en la planificación y estrategia de diseño web. Podemos discutir tus objetivos, identificar tu público objetivo y crear una estructura de sitio web efectiva.</p>
+            </div>
+
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Marketing Digital</h4>
+                <hr>
+                <ul class="servicios-tag">
+                <li>Publicidad</li>
+                <li>SEO</li>
+                <li>Analítica web</li>
+            </ul>
+            <p>Trabajaré contigo para desarrollar una estrategia de marketing digital personalizada que se ajuste a tus necesidades y objetivos comerciales. Esto incluye la identificación de tu público objetivo, la investigación de mercado, el análisis de la competencia y la creación de un plan de acción detallado.</p>
+            </div>    
+            
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Copywriting</h4>
+                <hr>
+                <ul class="servicios-tag">
+                <li>Branding coherente</li>
+                <li>Emails persuasivos</li>
+            </ul>
+            <p>Permíteme presentarte mis servicios de copywriting, diseñados específicamente para cautivar a tu audiencia y convertirlos en clientes leales.</p>
+            </div>
+            
+    </div>
+    </seccion>
+    <!--SECCION SKILLS-->
+    <div class="contenedor-skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Html & Css</p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Javascript</p>
+                <span class="porcentaje">75%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso2"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Marketing</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="bd" class="barra-progreso3"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Photoshop</p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="ps" class="barra-progreso4"></div>
+            </div>
+        </div>
+    </div>
+    <!--SECCION PORTAFOLIO-->
+    <section id="portafolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/Artículo-Web.png" alt="">
+                <div class="info">
+                    <h4>Escuela Digital Web</h4>
+                    <p>Azul School</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/Casa-Oli.png" alt="">
+                <div class="info">
+                    <h4>Landing Page Moda</h4>
+                    <p>Diseño propio</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/Netflix.png" alt="">
+                <div class="info">
+                    <h4>Azul School</h4>
+                    <p>Replica web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/landing.png" alt="">
+                <div class="info">
+                    <h4>Landing Page del Producto</h4>
+                    <p>Freecodecamp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION CONTACTO-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+            <div class="col">
+                <input type="text" placeholder="Tú nombre" id="nombre">
+                <input type="text" placeholder="Número de teléfono" id="telefono">
+                <input type="text" placeholder="Email" id="email">
+                <input type="text" placeholder="Tema" id="tema">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" id="mensaje"></textarea>
+                <button>
+                    Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+            <div class="info">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Concepción de la Sierra, Misiones, Argentina
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        Celular: +54 03743 15415880
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        Email: lili_esco@yahoo.com.ar
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--SECCION FOOTER-->
+    <footer>
+        <div class="arriba"><a href="#Inicio" class="arriba"><i class="fa-solid fa-angles-up"></i></a></div>
+        
+
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <p>&copy;Todos los derechos reservados - 2023</p>
+    </footer>
+    <script src="scrip.js"></script>
+
+    </body>
+</html>
